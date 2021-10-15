@@ -18,6 +18,8 @@ import com.bumptech.glide.Glide;
 import com.example.firebase_app_chat.Adapter.Adapter_Chat;
 import com.example.firebase_app_chat.Models.chatMessage;
 import com.example.firebase_app_chat.R;
+import com.example.firebase_app_chat.User_Setting.BaseActivity;
+import com.example.firebase_app_chat.User_Setting.Profile_person;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -37,10 +39,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
-public class Chat_Activity extends AppCompatActivity {
+public class Chat_Activity extends BaseActivity {
     ImageView img_back_chat,img_friend_chat,img_sent_chat;
-    TextView txt_nameFriend_chat;
+    TextView txt_nameFriend_chat,txt_chat_Availability;
     FirebaseFirestore firestore;
     String uid_friend;
     List<chatMessage> chatMessages;
@@ -48,6 +51,7 @@ public class Chat_Activity extends AppCompatActivity {
     RecyclerView recylerview_sent_chat;
     EditText edt_sent_chat;
     String conversionId=null;
+    boolean isReceiverAvailable=false;
 
     String name_person,avt_person,name_friend,avt_friend;
     @Override
@@ -58,6 +62,7 @@ public class Chat_Activity extends AppCompatActivity {
         img_back_chat=(ImageView) findViewById(R.id.img_back_chat);
         img_friend_chat=(ImageView)findViewById(R.id.img_friend_chat);
         txt_nameFriend_chat=(TextView)findViewById(R.id.txt_nameFriend_chat);
+        txt_chat_Availability=(TextView) findViewById(R.id.txt_chat_Availability);
         recylerview_sent_chat=(RecyclerView) findViewById(R.id.recylerview_sent_chat);
         edt_sent_chat=(EditText)findViewById(R.id.edt_sent_chat);
         img_sent_chat=(ImageView) findViewById(R.id.img_sent_chat);
@@ -66,6 +71,15 @@ public class Chat_Activity extends AppCompatActivity {
         chatMessages=new ArrayList<>();
         adapter_chat=new Adapter_Chat(chatMessages,Main_FireChat.uid,uid_friend,getApplicationContext());
         recylerview_sent_chat.setAdapter(adapter_chat);
+        adapter_chat.setOnItemClick(new Adapter_Chat.OnItemClickListenner() {
+            @Override
+            public void onItemClick(String uid_friend) {
+                String uid_person=uid_friend;
+                Intent intent=new Intent(Chat_Activity.this, Profile_person.class);
+                intent.putExtra("uid_person",uid_person);
+                startActivity(intent);
+            }
+        });
 
         img_back_chat.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,6 +176,24 @@ public class Chat_Activity extends AppCompatActivity {
         }
         edt_sent_chat.setText(null);
     }
+    private void listenerAvailability(){
+        firestore.collection("user").document(uid_friend)
+                .addSnapshotListener(Chat_Activity.this,(value, error) -> {
+                   if (error!=null){
+                       return;
+                   }if (value!=null){
+                       if (value.getLong("online")!=null){
+                           int availability= Objects.requireNonNull(value.getLong("online")).intValue();
+                           isReceiverAvailable=availability==1;
+                       }
+                    }
+                   if (isReceiverAvailable){
+                       txt_chat_Availability.setVisibility(View.VISIBLE);
+                   }else {
+                       txt_chat_Availability.setVisibility(View.GONE);
+                   }
+                });
+    }
     private String formatDate(Date date){
         return new SimpleDateFormat("hh:mm a", Locale.getDefault()).format(date);
     }
@@ -186,7 +218,12 @@ public class Chat_Activity extends AppCompatActivity {
                     adapter_chat.notifyDataSetChanged();
                 }else {
                     adapter_chat.notifyItemRangeInserted(chatMessages.size(),chatMessages.size());
-                    recylerview_sent_chat.smoothScrollToPosition(chatMessages.size()-1);
+                    recylerview_sent_chat.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+                        @Override
+                        public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+                            recylerview_sent_chat.scrollToPosition(recylerview_sent_chat.getAdapter().getItemCount()-1);
+                        }
+                    });
                 }
 
             }
@@ -256,5 +293,11 @@ public class Chat_Activity extends AppCompatActivity {
         if (adapter_chat!=null){
             adapter_chat.release();
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        listenerAvailability();
     }
 }

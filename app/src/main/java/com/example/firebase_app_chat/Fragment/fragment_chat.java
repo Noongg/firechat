@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -36,9 +37,13 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class fragment_chat extends Fragment implements Adapter_chat_lastMessage.ConversionListener{
     View view;
@@ -49,6 +54,7 @@ public class fragment_chat extends Fragment implements Adapter_chat_lastMessage.
     ImageView firechat_imgview;
     List<chatMessage> chatMessage;
     Adapter_chat_lastMessage adapter_chat_lastMessage;
+    TextView firechat_txtchange;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -57,6 +63,20 @@ public class fragment_chat extends Fragment implements Adapter_chat_lastMessage.
         recycler_chat=(RecyclerView)view.findViewById(R.id.recycler_chat);
         firechat_imgview = (ImageView) view.findViewById(R.id.firechat_imgview);
         search_bar=(LinearLayout) view.findViewById(R.id.search_bar);
+        firechat_txtchange=(TextView)view.findViewById(R.id.firechat_txtchange);
+
+        SimpleDateFormat dateFormat=new SimpleDateFormat("HH", Locale.getDefault());
+        String date=dateFormat.format(Calendar.getInstance().getTime());
+        int date_number= Integer.parseInt(date);
+        if (date_number>=5 && date_number<11){
+            firechat_txtchange.setText("Good Morning \uD83E\uDD73");
+        }
+        else if (date_number>=11 && date_number<18){
+            firechat_txtchange.setText("Good Afternoon \uD83E\uDD17");
+        }
+        else{
+            firechat_txtchange.setText("Good Evening \uD83D\uDE34");
+        }
 
         search_bar.setOnClickListener(new View.OnClickListener() {
             @Override

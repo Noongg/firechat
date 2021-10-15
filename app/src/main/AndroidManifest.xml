@@ -14,8 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firebase_app_chat"
-        android:usesCleartextTraffic="true"
-        android:windowSoftInputMode="adjustPan|adjustResize">
+        android:usesCleartextTraffic="true">
         <activity
             android:windowSoftInputMode="adjustResize"
             android:name=".Main_app.Chat_Activity"

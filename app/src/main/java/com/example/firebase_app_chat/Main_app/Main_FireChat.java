@@ -19,6 +19,7 @@ import com.example.firebase_app_chat.Fragment.fragment_chat;
 import com.example.firebase_app_chat.Fragment.fragment_people;
 import com.example.firebase_app_chat.Fragment.fragment_user;
 import com.example.firebase_app_chat.R;
+import com.example.firebase_app_chat.User_Setting.BaseActivity;
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -30,7 +31,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
 
-public class Main_FireChat extends AppCompatActivity {
+public class Main_FireChat extends BaseActivity {
 
     public static String uid;
     FirebaseFirestore firestore;

@@ -1,6 +1,7 @@
 package com.example.firebase_app_chat.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.firebase_app_chat.Models.chatMessage;
 import com.example.firebase_app_chat.R;
+import com.example.firebase_app_chat.User_Setting.Profile_person;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -27,6 +29,7 @@ public class Adapter_Chat extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
     private String senderId;
     private String receivedId;
     private Context context;
+    OnItemClickListenner listenner;
     public static final int VIEW_TYPE_SENT=1;
     public static final int VIEW_TYPE_RECEIVED=2;
 
@@ -97,6 +100,13 @@ public class Adapter_Chat extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
             txt_friend_received=(TextView) itemView.findViewById(R.id.txt_friend_received);
             txt_dateTime_received=(TextView) itemView.findViewById(R.id.txt_dateTime_received);
             img_friend_received=(ImageView) itemView.findViewById(R.id.img_friend_received);
+            img_friend_received.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String uid_friend=receivedId;
+                    listenner.onItemClick(uid_friend);
+                }
+            });
         }
         public void setdata(chatMessage chatMessage, String receivedId){
             txt_friend_received.setText(chatMessage.getMessage());
@@ -107,12 +117,21 @@ public class Adapter_Chat extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
                         @Override
                         public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
                             if (value.exists()){
+                                if (context == null) {
+                                    return;
+                                }
                                 String avt=value.getString("avt");
                                 Glide.with(context).load(avt).into(img_friend_received);
                             }
                         }
                     });
         }
+    }
+    public interface OnItemClickListenner{
+        void onItemClick(String uid_friend);
+    }
+    public void setOnItemClick(OnItemClickListenner listenner){
+        this.listenner=listenner;
     }
     public void release(){
         context=null;
