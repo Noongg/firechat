@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/img_friend_lastMessage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:maxLength="18"
+        android:maxLines="1"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txt_name_lastMessage"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@id/img_friend_lastMessage"
+        android:text="Họ tên"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:maxLength="18"
+        android:maxLines="1"
+        android:id="@+id/txt_chat_lastMessage"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/txt_name_lastMessage"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@id/img_friend_lastMessage"
+        android:text="Họ tên"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

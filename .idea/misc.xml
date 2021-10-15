@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/avatar_1.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/borderbottom.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/chat_content_top.xml" value="0.17263513513513515" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/custom_bg_received.xml" value="0.17263513513513515" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/custom_bg_sent.xml" value="0.17263513513513515" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/custom_btn.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/custom_checkbox.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/custom_edit_user.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/custom_indicator.xml" value="0.17263513513513515" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/custom_search.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/darkmode_light.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/ic_baseline_format_paint_24.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/ic_baseline_place_24.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/ripple_effect.xml" value="0.17692307692307693" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/slide_left.xml" value="0.17871621621621622" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/drawable/tab_indicator.xml" value="0.17263513513513515" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_chat.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_dark_mode.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_forgot_password.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_forgot_password_otp.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_forgot_password_set_new_pass.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_login.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_login_with_fb.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_login_with_tw.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_profile_person.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_profile_search_friend.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_profile_user.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_profile_user_edit.xml" value="0.176" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_profile_user_search.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_reg_otp_phone.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_register.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_search_user.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_upload_birthday.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_upload_gender.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_upload_img.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_upload_img_cover.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_upload_name.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_upload_password.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_upload_story.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/activity_user_profile.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/bottom_sheet.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/bottom_sheet_canner.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/content_search_user.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/dialog_progress.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment__login.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_chat.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_friend.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_home.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_people.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_people_friend.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_people_request.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_people_sent.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_reflow.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_slideshow.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/fragment_user.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/icon.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/item_chat_lastmessage.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/item_chat_received.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/item_chat_sent.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/item_friend.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/item_people.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/item_people_friend.xml" value="0.16216216216216217" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/item_search_user.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/layout_header_nav.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/main_firechat.xml" value="0.176" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/layout/nav_header_search_user.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/menu/bottom_navigation.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/menu/menu_bottom_nav.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/menu/menu_nav.xml" value="0.16824324324324325" />
+        <entry key="..\:/Users/longl/AndroidStudioProjects/firebase_app_chat/app/src/main/res/menu/navigation_drawer.xml" value="0.16824324324324325" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

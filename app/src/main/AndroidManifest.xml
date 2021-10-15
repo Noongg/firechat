@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firebase_app_chat">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Firebase_app_chat"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustPan|adjustResize">
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name=".Main_app.Chat_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".User_Setting.Profile_search_friend"
+            android:exported="true" />
+        <activity
+            android:name=".User_Setting.Profile_person"
+            android:exported="true" />
+        <activity
+            android:name=".User_Setting.Search_person"
+            android:exported="true" />
+        <activity
+            android:name=".User_Setting.Dark_mode"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Upload_password"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Upload_story"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Upload_birthday"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Upload_gender"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Upload_Name"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Upload_img_cover"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Upload_img"
+            android:exported="true" />
+        <activity
+            android:name=".User_Setting.Profile_user_edit"
+            android:exported="true" />
+        <activity
+            android:name=".User_Setting.Profile_user"
+            android:exported="true" />
+        <activity
+            android:name=".Account.ForgotPassword_setNewPass"
+            android:exported="true" />
+        <activity
+            android:name=".Account.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".Main_app.Main_FireChat"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Reg_Otp_Phone"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Register"
+            android:exported="true" />
+        <activity
+            android:name=".Account.Login"
+            android:exported="true" />
+        <activity
+            android:name=".Splash_Screen.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".User_Setting.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

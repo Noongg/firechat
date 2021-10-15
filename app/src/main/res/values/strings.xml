@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">firebase_app_chat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="facebook_app_id">1187606015038839</string>
+    <string name="fb_login_protocol_scheme">fb1187606015038839</string>
+</resources>

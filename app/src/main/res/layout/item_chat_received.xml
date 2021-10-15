@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/txt_friend_received"
+        android:id="@+id/img_friend_received"
+        android:layout_width="30dp"
+        android:scaleType="centerCrop"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="1dp"
+         />
+    <TextView
+        app:layout_constraintWidth_max="wrap"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="4sp"
+        app:layout_constraintWidth_percent="0.75"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/img_friend_received"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:background="@drawable/custom_bg_received"
+        android:id="@+id/txt_friend_received"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@id/txt_friend_received"
+        app:layout_constraintTop_toBottomOf="@id/txt_friend_received"
+        android:id="@+id/txt_dateTime_received"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

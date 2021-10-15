@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".Account.Upload_img_cover">
+    <TextView
+        android:textColor="#f000"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:text="Cập nhật ảnh bìa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <ImageView
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        android:id="@+id/upload_img_cover"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></ImageView>
+    <Button
+        android:id="@+id/upload_btn_img_cover"
+        android:background="@drawable/custom_btn"
+        android:layout_marginTop="200dp"
+        android:text="Cập nhật ảnh bìa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></Button>
+</LinearLayout>
